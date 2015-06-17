@@ -2,7 +2,7 @@
 # coding: utf-8
 
 def createFile(outPath, tools = 'm')
-  oriPath = "/Users/chibahan/Documents/Script/Module" + File.extname(outPath)
+  oriPath = "/Users/chiba/Documents/Script/Module" + File.extname(outPath)
   if !File.file?("./#{outPath}")
     extName = File.extname(outPath)
     if extName == '.v' or \
