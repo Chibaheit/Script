@@ -2,7 +2,7 @@
 # coding: utf-8
 
 def createFile(outPath, tools = 'm')
-  oriPath = "/Users/Chiba/Dropbox/Script/Module" + File.extname(outPath)
+  oriPath = "/Users/chiba/Dropbox/Script/Module" + File.extname(outPath)
   if !File.file?("./#{outPath}")
     extName = File.extname(outPath)
     if extName == '.v' or \
@@ -25,8 +25,6 @@ def createFile(outPath, tools = 'm')
   end
   if tools == 'v'
     exec "vim #{outPath}"
-  else
-    `mate #{outPath}`
   end
 end
 
